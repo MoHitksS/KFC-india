@@ -1,0 +1,356 @@
+.startOrder {
+    color: white;
+    display: flex;
+}
+
+.childOrder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.childOrder button {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.welcomeTokfc {
+    background-color: white;
+}
+
+.welcomeTokfc .welcomeBanner {
+    background: white;
+}
+
+.bigcontainer {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.mainContainer {
+    display: flex;
+    height: 700px;
+    overflow: scroll;
+    width: 61%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainContainer::-webkit-scrollbar {
+    width: 10px;
+}
+
+.mainContainer .cards {
+    width: 90%;
+    /* border: 2px solid red; */
+    display: flex;
+    padding: 17px 2px;
+    align-items: center;
+    background-color: rgb(248, 247, 245);
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.cards .logo {
+    /* width: 200px; */
+    width: 117px;
+}
+
+.cards .logo img {
+    width: 100%;
+}
+
+.cardName {
+    margin-top: 10px;
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70px;
+    margin-left: 20px;
+}
+
+.cardName div:nth-child(1) {
+    color: gray;
+    margin-left: 10px;
+}
+
+.cardName div:nth-child(2) span {
+    margin-left: 10px;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.mainContainer .right {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.mainContainer .right span:nth-child(3),
+.mainContainer .right span:nth-child(1) {
+    border: 1px solid #a8a9ab;
+    ;
+    background-color: #fff;
+    padding: 0;
+    height: 32px;
+    width: 32px;
+    padding: 8px;
+    border-radius: 24px;
+    margin-right: 5px;
+    cursor: pointer;
+
+}
+
+.mainContainer .right span:nth-child(3):hover,
+.mainContainer .right span:nth-child(1):hover {
+    background-color: black;
+    transform: all 0.5s;
+    color: white;
+}
+
+.mainContainer .right span:nth-child(3) {
+    margin-right: 20px;
+}
+
+.mainContainer .right span:nth-child(2) {
+    margin-right: 13px;
+    font-weight: bolder;
+    margin-left: 8px;
+}
+
+.mainContainer .right span:nth-child(1) img {
+    margin-bottom: 4px;
+}
+
+.mainContainer .right span:last-child {
+    margin-left: 30px;
+}
+
+.paymentcart {
+    width: 407px;
+    /* border: 2px solid; */
+    margin-left: 20px;
+    padding: 37px 19px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.paymentcart h2 {
+    margin: 14px 0px;
+    margin-left: 12px;
+}
+
+.paymentcart .applyCuppon {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 16px;
+    /* background-color: rgb(248,247,245); */
+    padding: 9px 11px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUAAAAA0CAYAAAD7VOHJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJbSURBVHgB7d3PcdpAFIDx9wQWks0hdEA6gA6SChJXkHSSdJBJBXYqsFOB6cDuIHQgH0TEX21YxpOxQVrOq/f9TkKr8ze70iLpslo4AQCDEgEAowggALMIIACzCCAAswggALMIIACzCCAAswggALMIIACzCCAAswggALMIIACzEle7XwIAxqjIrfqDqqrGKvXD/nAsANBt8+3OXQ+Hw6fDEjjP83m1XE9F9V4AoKP8ineQXU59/PxvPb6gWpS3mugXAYAucXKfXV5dvz51EsCiKN7lWfooLIcBdMfcz/xU9fn1SW26sizLSb+njwIAHeAkee9v9R2fb9wG49fHtat/CgBEzj/tbYrfy1izl6VwIQAQsbbZn9e6EXo0Gu3XyjoTAIiWztri5wX/CbJfBv8WAIjVmYYFA9jvy0wAIFJu555C48EALhabuQBApLLhNhhAlTP4cDqAWGX5VbBxvA0GgFnBAPqtMAIAkXIu3LBgALOsPxEAiNRmczEOjQcD6JwSQADRqrfyITQeDGCiyScBgFidaVjrE5KqKsYq6R8BgIgNsvVIdfTcNNY+A6wvvgsARG5VDb61jTXOAJn9AeiSpOemaTo82RR9MgP0j4338XsQAOiIeqd3TVtiTgK4qtIb4W3QALplvF6mP45P/g+gr+OqWtzsF8WfBQA6xol8XS3/vpkJHu4BlmUx6ffSO2HmB6D75k7WH/N8NFe+AgfAosOH0XnbCwCreBsMALMIIACzCCAAswggALMIIACzCCAAswggALMIIACzCCAAswggALMIIACzCCAAs/4BsqmdodGkXAsAAAAASUVORK5CYII=');
+
+}
+
+.applyCuppon button {
+    padding: 3px;
+    border-radius: 14px;
+    border: 1px solid black;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.applyCuppon span:first-child {
+    color: red;
+}
+
+.applyCuppon button:hover,
+.hoverclass {
+    background-color: black;
+    transform: all 0.5s;
+    color: white;
+}
+
+.paymentcart .paySubTotal,
+.payGst {
+    display: flex;
+    justify-content: space-between;
+    width: 81%;
+    margin: auto;
+}
+
+.paymentcart .payGst {
+    margin-bottom: 23px;
+}
+
+.paymentcart .payBack {
+    width: 80%;
+    /* margin:auto; */
+    margin: 11px auto;
+}
+
+.paymentcart .payDonation {
+    width: 84%;
+    margin: 19px auto;
+    border: 1px solid gainsboro;
+    padding: 23px 13px;
+    font-size: 14px;
+
+}
+
+.payDonation span {
+    color: black;
+    font-weight: bolder;
+}
+
+.payDonation img {
+    width: 11%;
+    margin-left: 10px;
+}
+
+.paymentcart .checkout {
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+    padding: 10px;
+    border-radius: 33px;
+    background: rgb(228, 0, 43);
+    width: 70%;
+    cursor: pointer;
+    margin: auto;
+}
+
+.checkout span {
+    color: white;
+    font-family: cursive;
+}
+
+.offers {
+    /* border: 1px solid; */
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    top: 25%;
+    display: none;
+    left: 25%;
+    background-color: white;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.offers .heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.offers .heading h1 {
+    font-size: 20px;
+    /* text-align: center; */
+
+}
+
+.offers .heading h1:last-child {
+    color: red;
+    /* margin-left: 10px; */
+    margin-right: 22px;
+    cursor: pointer;
+    font-family: cursive;
+}
+
+.offers .cards {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    align-items: center;
+
+    padding: 30px 80px;
+}
+
+.offers .rightCards input {
+    padding: 10px;
+    font-family: monospace;
+}
+
+.offers .rightCards button {
+    padding: 10px 37px;
+    border-radius: 16px;
+    border: none;
+    font-size: 20px;
+    font-family: 'Roboto';
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+    .bigcontainer {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .mainContainer {
+        width: 90%;
+        margin: auto;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .paymentcart {
+        width: 80%;
+        margin-left: 20px;
+        padding: 37px 19px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: auto;
+    }
+}
+
+/* Small Screen */
+@media only screen and (min-width: 320px) and (max-width: 499px) {
+    .bigcontainer {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .mainContainer {
+        width: 95%;
+        margin: auto;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .paymentcart {
+        width: 95%;
+        margin-left: 20px;
+        padding: 37px 19px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: auto;
+    }
+
+    .mainContainer .cards {
+        width: 90%;
+        /* border: 2px solid red; */
+        display: flex;
+        padding: 17px 2px;
+        align-items: center;
+        background-color: rgb(248, 247, 245);
+        margin-top: 20px;
+        margin-left: 20px;
+        flex-direction: column;
+    }
+
+    .mainContainer .right {
+        margin-left: auto;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+}

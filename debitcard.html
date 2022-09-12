@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://online.kfc.co.in/favicon.ico"/>
+    <title>Payment Gateway</title>
+    <style>
+        * {
+            font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        }
+
+        body {
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+        }
+
+        #container {
+            width: 25%;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 5px;
+        }
+
+        h1 {
+            padding-top: 20px;
+            font-size: x-large;
+        }
+
+        h1,
+        form {
+            margin-left: 15px;
+
+        }
+
+        input {
+            width: auto;
+            border-radius: 5px;
+            border: 2px solid #e1e4e7;
+            margin: auto;
+            margin-top: 10px;
+            padding: 10px 10px;
+
+        }
+
+        #cardnumber {
+            width: 87%;
+        }
+
+        #submit {
+            width: 94%;
+            background-color: #0070ba;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+
+
+        @media only screen and (min-width: 500px) and (max-width: 800px) {
+            #container {
+                width: 54%;
+                margin: auto;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                border-radius: 5px;
+            }
+        }
+
+        @media only screen and (min-width: 320px) and (max-width: 499px) {
+            #container {
+                width: 90%;
+                margin: auto;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                border-radius: 5px;
+            }
+            input{
+                width: 86%;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Pay with debit or credit card</h1>
+        <form>
+            <input type="number" placeholder="Card number" id="cardnumber">
+            <div id="carddata">
+                <input type="text" placeholder="Expiry Date" id="expirydate">
+                <input type="number" placeholder="CVV" id="cvv">
+            </div>
+            <div id="namedata">
+                <input type="text" placeholder="First Name" id="firstname">
+                <input type="text" placeholder="Last Name" id="lastname">
+            </div>
+            <input type="submit" id="submit" value="Pay Now">
+        </form>
+    </div>
+
+</body>
+
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit", storevalue)
+
+    function storevalue() {
+        event.preventDefault();
+        let cardNumber = document.querySelector("#cardnumber").value;
+        let expiryDate = document.querySelector("#expirydate").value;
+        let CVV = document.querySelector("#cvv").value;
+        let firstName = document.querySelector("#firstname").value;
+        let lastName = document.querySelector("#lastname").value;
+
+        if (cardNumber != "" && expiryDate != "" && CVV != "" && firstName != "" && lastName != "") {
+            if (cardNumber === "123456789" && CVV === "123" && expiryDate === "12/22") {
+                window.location.href = "otpDebitcard.html"
+            }
+            else {
+                alert("Enter Correct Details")
+            }
+
+        }
+        else {
+            alert("error")
+        }
+
+    }
+</script>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://online.kfc.co.in/favicon.ico"/>
+    <title>FAQ</title>
+    <style>
+          body *{
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #privacybox{
+            /* width: 100%; */
+            margin: auto;
+            display: grid;
+            grid-template: auto/repeat(2,auto);
+            justify-content: center;
+            gap:20%;
+        }
+        #privacyleftbox{
+            width: 100%;
+            margin-left: 45%;
+        }
+        #privacyrightbox{
+            width: 80%;
+            text-align: justify;
+            margin-top: 4.5%;
+            margin-bottom: 10%;
+        }
+        hr{
+            border: 1px solid grey;
+            background-color: grey;
+        }
+        #privacyrightbox>.contentbox{
+            position: relative;
+            /* margin: 20px 20px; */
+            border-bottom: 1px solid rgb(246, 242, 242);
+            border-top: 1px solid rgb(246, 242, 242);
+        }
+        #privacyrightbox>.contentbox>.label{
+            position: relative;
+            padding: 50px;
+            cursor: pointer;
+            /* background-color: #f8f7f5; */
+        }
+        #privacyrightbox>.contentbox>.label::before{
+            content: "+";
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            transform: translateY(-50%);
+            font-size: 1.5em;
+        }
+        #privacyrightbox>.contentbox.active>.label::before{
+            content: "-";
+        }
+        #privacyrightbox>.contentbox>.content{
+            position: relative;
+            height: 0;
+            overflow: hidden;
+            transition: .5s;
+            overflow-y: auto;
+            padding: 2% 5%;
+            /* background-color: #f8f7f5; */
+        }
+        #privacyrightbox>.contentbox.active>.content{
+            height: auto;
+            padding: 5%;
+            background-color:#f8f7f5;
+        }
+        #privacyrightbox>.contentbox.active>.label{
+            background-color: #f8f7f5;
+        }
+        #privacyleftbox>p{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        #privacyleftbox>div{
+            display: grid;
+            grid-template: repeat(2,auto);
+            gap: 20px;
+            margin-top: 15%;
+           
+        }
+        #privacyleftbox>div>button{
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 100px;
+            background-color: white;
+            cursor: pointer;
+        }
+        #privacyleftbox>div>button>img{
+            width: 10%;
+            margin-right: 2%;
+        }
+        #search{
+            width: 30%;
+            padding: 10px 20px;
+            border-radius: 100px;
+            margin-left: 60%;
+            border: 1px solid grey;
+        }
+    </style>
+</head>
+<body>
+    <div id="privacybox">
+        <div id="privacyleftbox">
+            <img src="https://online.kfc.co.in/static/media/Strips.4f336307.svg" alt="Error">
+            <h1>FAQ</h1>
+            <p>Ordering</p>
+            <p>Takeaway</p>
+            <p>Account</p>
+            <p>Payment</p>
+            <p>Post-Order / Charges to Order</p>
+            <p>Rewards / Offers</p>
+            <p>Notifications / Emails</p>
+            <p>Promotions</p>
+            <hr>
+            <div>
+                <button>
+                    <img src="https://images.ctfassets.net/wtodlh47qxpt/4WC7679tMXFtQzoTY5U9t5/4ba8650ab745efb3f62cf62aec26d661/Call.svg" alt="Call us">
+                    Call Us 080-4275-4444
+                </button>
+                <button id="contactus">
+                    <img src="https://images.ctfassets.net/wtodlh47qxpt/2TQZnY1JNm0KO8xvBgmBQo/c4123bd1346ff4df4b491f5c3f98b9ae/email.svg" alt="Contact Us">
+                    Contact Us
+                </button>
+            </div>
+        </div>
+        <div id="privacyrightbox">
+            <input type="text" id="search" placeholder="Enter question or search term">
+            <hr>
+              <div class="contentbox">
+                <h1>ORDERING</h1>
+                <div class="label">How do I change or cancel my pickup order once I’ve placed my order?</div>
+                    <div class="content">
+                    <p>Absolutely! After selecting the location from which you’d like to order, you will see the menu screen, right below the red KFC banner you can select ASAP or select a different date and time. You can also change the pickup or delivery date and time during the order review screen if you change your mind.</p>    
+                    </div>  
+            </div>
+            <div class="contentbox">
+                <div class="label">How can I change the information for my credit/debit card or select a different default payment method?</div>
+                <div class="content">
+                <p>Absolutely! After selecting the location from which you’d like to order, you will see the menu screen, right below the red KFC banner you can select ASAP or select a different date and time. You can also change the pickup or delivery date and time during the order review screen if you change your mind.</p>    
+                </div>
+            </div>
+            <div class="contentbox">
+                <h1>TAKEAWAY</h1>
+                <div class="label">How do I change or cancel my pickup order once I’ve placed my order?</div>
+                    <div class="content">
+                    <P>Absolutely! After selecting the location from which you’d like to order, you will see the menu screen, right below the red KFC banner you can select ASAP or select a different date and time. You can also change the pickup or delivery date and time during the order review screen if you change your mind.</P>   
+                    </div>
+            </div>
+            <div class="contentbox">
+                <h1>ACCOUNT</h1>
+                <div class="label">How do I change or cancel my pickup order once I’ve placed my order?</div>
+                    <div class="content">
+                    <p>Absolutely! After selecting the location from which you’d like to order, you will see the menu screen, right below the red KFC banner you can select ASAP or select a different date and time. You can also change the pickup or delivery date and time during the order review screen if you change your mind.</p>    
+                    </div>
+            </div>
+            <div class="contentbox">
+                <div class="label">How can I change the information for my credit/debit card or select a different default payment method?</div>
+                    <div class="content">
+                    <p>Absolutely! After selecting the location from which you’d like to order, you will see the menu screen, right below the red KFC banner you can select ASAP or select a different date and time. You can also change the pickup or delivery date and time during the order review screen if you change your mind.</p>   
+                    </div>
+            </div>
+            <div class="contentbox">
+                <h1>PAYMENT</h1>
+                <div class="label">How do I change or cancel my pickup order once I’ve placed my order?</div>
+                    <div class="content">
+                    <p>Absolutely! After selecting the location from which you’d like to order, you will see the menu screen, right below the red KFC banner you can select ASAP or select a different date and time. You can also change the pickup or delivery date and time during the order review screen if you change your mind.</p>   
+                    </div>
+            </div>
+            <div class="contentbox">
+                <div class="label">How can I change the information for my credit/debit card or select a different default payment method?</div>
+                    <div class="content">
+                    <p>Absolutely! After selecting the location from which you’d like to order, you will see the menu screen, right below the red KFC banner you can select ASAP or select a different date and time. You can also change the pickup or delivery date and time during the order review screen if you change your mind.</p>   
+                    </div>
+            </div>
+            <div class="contentbox">
+                <h1>POST-ORDER / CHARGES TO ORDER</h1>
+                <div class="label">How do I change or cancel my pickup order once I’ve placed my order?</div>
+                    <div class="content">
+                    <p>Absolutely! After selecting the location from which you’d like to order, you will see the menu screen, right below the red KFC banner you can select ASAP or select a different date and time. You can also change the pickup or delivery date and time during the order review screen if you change your mind.</p>    
+                    </div>
+            </div>
+            <div class="contentbox">
+                <div class="label">How can I change the information for my credit/debit card or select a different default payment method?</div>
+                    <div class="content">
+                    <p>Absolutely! After selecting the location from which you’d like to order, you will see the menu screen, right below the red KFC banner you can select ASAP or select a different date and time. You can also change the pickup or delivery date and time during the order review screen if you change your mind.</p>   
+                    </div>
+            </div>
+            <div class="contentbox">
+                <h1>REWARDS / OFFERS</h1>
+                <div class="label">How do I change or cancel my pickup order once I’ve placed my order?</div>
+                    <div class="content">
+                    <p>Absolutely! After selecting the location from which you’d like to order, you will see the menu screen, right below the red KFC banner you can select ASAP or select a different date and time. You can also change the pickup or delivery date and time during the order review screen if you change your mind.</p>    
+                    </div>
+            </div>
+            <div class="contentbox">
+                <div class="label">How can I change the information for my credit/debit card or select a different default payment method?</div>
+                    <div class="content">
+                    <p>Absolutely! After selecting the location from which you’d like to order, you will see the menu screen, right below the red KFC banner you can select ASAP or select a different date and time. You can also change the pickup or delivery date and time during the order review screen if you change your mind.</p>   
+                    </div>
+            </div>
+            <div class="contentbox">
+                <h1>NOTIFICATIONS / EMAILS</h1>
+                <div class="label">How do I change or cancel my pickup order once I’ve placed my order?</div>
+                    <div class="content">
+                    <p>Absolutely! After selecting the location from which you’d like to order, you will see the menu screen, right below the red KFC banner you can select ASAP or select a different date and time. You can also change the pickup or delivery date and time during the order review screen if you change your mind.</p>    
+                    </div>
+            </div>
+            <div class="contentbox">
+                <div class="label">How can I change the information for my credit/debit card or select a different default payment method?</div>
+                    <div class="content">
+                    <p>Absolutely! After selecting the location from which you’d like to order, you will see the menu screen, right below the red KFC banner you can select ASAP or select a different date and time. You can also change the pickup or delivery date and time during the order review screen if you change your mind.</p>   
+                    </div>
+            </div>
+            <div class="contentbox">
+                <h1>PROMOTIONS</h1>
+                <div class="label">How do I change or cancel my pickup order once I’ve placed my order?</div>
+                    <div class="content">
+                    <p>Absolutely! After selecting the location from which you’d like to order, you will see the menu screen, right below the red KFC banner you can select ASAP or select a different date and time. You can also change the pickup or delivery date and time during the order review screen if you change your mind.</p>    
+                    </div>
+            </div>
+            <div class="contentbox">
+                <div class="label">How can I change the information for my credit/debit card or select a different default payment method?</div>
+                    <div class="content">
+                    <p>Absolutely! After selecting the location from which you’d like to order, you will see the menu screen, right below the red KFC banner you can select ASAP or select a different date and time. You can also change the pickup or delivery date and time during the order review screen if you change your mind.</p>   
+                    </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    let dropdown=document.getElementsByClassName("contentbox");
+    for(let i=0;i<dropdown.length;i++){
+        dropdown[i].addEventListener("click",function(){
+            this.classList.toggle("active")
+        })
+    }
+    document.querySelector("#contactus").addEventListener("click",function(){
+        window.location.href="contactus.html";
+    });
+</script>

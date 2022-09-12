@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="icon" href="https://online.kfc.co.in/favicon.ico"/>
+    <title>HELP</title>
+    <style>
+        body * {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        #heading {
+            position: relative;
+        }
+
+        #heading>h1 {
+            position: absolute;
+            top: 25%;
+            left: 40%;
+            color: white;
+            font-size: 60px;
+        }
+
+        #heading>img {
+            width: 100%;
+        }
+
+        #heading+h1 {
+            text-align: center;
+            margin-top: 4%;
+        }
+
+        #help {
+            display: grid;
+            grid-template: repeat(3, auto)/repeat(3, auto);
+            gap: 10px;
+            justify-content: space-around;
+        }
+
+        .help1 {
+            display: grid;
+            grid-template: auto/repeat(2, auto);
+        }
+
+        .help1>hr {
+            border: 0ch;
+            border-top: 1px solid;
+            width: 100px;
+            margin-left: 5%;
+            margin-top: 13%;
+        }
+
+        #helpbox {
+            width: 60%;
+            margin: auto;
+        }
+
+        button {
+            width: 80%;
+            background-color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 100px;
+            cursor: pointer;
+            border: 1.5px solid;
+            margin-top: 10px;
+        }
+
+        button>img {
+            margin-right: 5%;
+        }
+
+        .help1+p {
+            /* margin-top: -7%; */
+            text-align: start;
+        }
+
+        .help1+p+p {
+            /* margin-top: ; */
+            text-align: start;
+        }
+
+        #faq {
+            background-color: #f8f7f5;
+            display: grid;
+            grid-template: repeat(2, auto);
+            padding: 5%;
+            gap: 20px;
+            margin-top: 10%;
+        }
+
+        #faq>div:nth-child(2) {
+            display: grid;
+            grid-template: auto/repeat(4, auto);
+        }
+
+        #faq>div:nth-child(3) {
+            width: 40%;
+        }
+
+        .popup1 {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: -150%;
+            left: 50%;
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(1.25);
+            width: 40%;
+            height: auto;
+            /* padding: 20px 40px; */
+            background: #fff;
+            box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+            transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+
+        }
+
+        .popup1.active {
+            top: 50%;
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+            transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+
+        }
+
+        .close_button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 20px;
+            height: 20px;
+            background: grey;
+            color: white;
+            text-align: center;
+            line-height: 15px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        #button {
+            display: grid;
+            justify-content: center;
+            row-gap: 60px;
+            margin-top: 10%;
+        }
+
+        #button>button {
+            width: 100%;
+            border-radius: 200px;
+            background-color: white;
+            padding: 11px 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #faq>div>button>a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .popup1>h1 {
+            text-align: center;
+        }
+
+        hr+div>h1 {
+            text-align: center;
+        }
+
+        hr+div {
+            background-color: #f8f7f5;
+            padding: 40px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <link rel="stylesheet" href="/css/home.css"> -->
+    <header>
+        <nav>
+            <div class="nav">
+                <div class="right-nav">
+                    <a href="/"><img src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg" alt="logo"></a>
+                    <ul>
+                        <li><a href="/Menu.html">Menu</a></li>
+                        <li><a href="/offers.html">Deals</a></li>
+                    </ul>
+                </div>
+                <div class="left-nav">
+                    <div class="user-logo">
+                        <a href="/"><img
+                                src="https://images.ctfassets.net/wtodlh47qxpt/6bJdGLRkksNvWP4LI9ZiFF/cb89d6393492fd093e0f99980abfa39e/Account_Icon.svg"
+                                alt=""></a>
+                        <span id="signIn_index"><a href="signin.html">Sign In</a> </span>
+                    </div>
+                    <div id="Border_left"></div>
+                    <div class="cart-bucket">
+                        <span></span>
+                        <span id="pricess">0</span>
+                        <div class="img"><a href="/addCart.html"><img
+                                    src="https://images.ctfassets.net/wtodlh47qxpt/6qtBVFuno7pdwOQ9RIvYm9/d13e9b7242980972cf49beddde2cc295/bucket_cart_icon.svg"
+                                    alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="heading">
+        <img src="https://online.kfc.co.in/static/media/getHelp.c28c1243.svg" alt="KFC HELP">
+        <h1>GET HELP</h1>
+    </div>
+    <div id="helpbox">
+        <h1>HOW CAN WE HELP YOU?</h1>
+        <div id="help">
+            <div>
+                <div class="help1">
+                    <h3>NEAREST KFC</h3>
+                    <hr>
+                </div>
+                <button class="findkfc">Find a KFC</button>
+            </div>
+            <div>
+                <div class="help1">
+                    <h3>NEED TO TALK</h3>
+                    <hr>
+                </div>
+                <p>Call us.</p>
+                <p>080-4275-4444</p>
+            </div>
+            <div>
+                <div class="help1">
+                    <h3>CONTACT US</h3>
+                    <hr>
+                </div>
+                <p>Have an issue with your order?</p>
+                <button id="contactus">
+                    <img src="https://images.ctfassets.net/wtodlh47qxpt/2TQZnY1JNm0KO8xvBgmBQo/c4123bd1346ff4df4b491f5c3f98b9ae/email.svg"
+                        alt="Contact Us">
+                    Contact Us
+                </button>
+            </div>
+
+        </div>
+        <div id="faq">
+            <h3>FAQ</h3>
+            <div>
+                <button><a href="faq.html">Ordering</a></button><button><a
+                        href="faq.html">Account</a></button><button><a href="faq.html">Payment</a></button>
+
+                <button><a href="faq.html">Promotions</a></button>
+            </div>
+            <div><button><a href="faq.html">View All FAQs</a></button></div>
+        </div>
+    </div>
+    <div class="popup1">
+        <h1>START YOUR ORDER</h1>
+        <div class="close_button">&times;</div>
+        <hr>
+        <div>
+            <h1>HOW WOULD YOU LIKE TO RECEIVE YOUR ORDER</h1>
+            <div id="button">
+                <button id="cancel">Pick up</button>
+                <button id="submit">Dine in</button>
+                <button id="delivery">Delivery</button>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="nextFooter">
+                <div class="footerLogo">
+                    <img src="https://images.ctfassets.net/wtodlh47qxpt/25FSYFuEtGct8NSrtpKe6d/b602f6fe0bf294e6a6dff5d7648bf594/KFC_Logo.svg"
+                        alt="">
+                </div>
+                <div class="kfcFoodMenu">
+                    <ul>
+                        <li><a href="/">KFC FOOD</a></li>
+                        <li><a href="/Menu.html">Menu</a></li>
+                        <li><a href="/">Order Lookup</a></li>
+                        <li><a href="/gift.html">Gift Card</a></li>
+                    </ul>
+                </div>
+                <div class="footerSupport">
+                    <ul>
+                        <li><a href="/">support</a></li>
+                        <li><a href="/help.html">Get Help</a></li>
+                        <li><a href="/contactus.html">contact Us</a></li>
+                        <li><a href="/feedback.html">KFC Feedback</a></li>
+                        <li><a href="/Privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footerLegal">
+                    <ul>
+                        <li><a href="/">Legal</a></li>
+                        <li><a href="/terms.html">Terms and condtions </a></li>
+                        <li><a href="/Privacy.html">Privacy Policy</a></li>
+                        <li><a href="/disclaimer.html">Disclaimer</a></li>
+                        <li><a href="/caution.html">Caution Notice</a></li>
+                    </ul>
+                </div>
+
+                <div class="footerIndia">
+                    <ul>
+                        <li><a href="/">KFC India</a></li>
+                        <li><a href="/about.html">About KFC </a></li>
+                        <li><a href="/care.html">KFC Care</a></li>
+                        <li><a href="/careers.html">Careers</a></li>
+                        <li><a href="/golden.html">Our Golden Past</a></li>
+                    </ul>
+                </div>
+
+                <div class="footerfind">
+                    <ul>
+                        <li><a href="/findkfc.html"><img
+                                    src="https://images.ctfassets.net/wtodlh47qxpt/6qgKpWUOIsrIiazhk3cdmF/d60b4c20be69bab1f939bf33348b67e9/Find_KFC.svg"
+                                    alt="">Find KFC</a></li>
+                    </ul>
+                </div>
+                <div class="footerApps">
+                    <a href="https://play.google.com/store/apps/details?id=com.yum.kfc"><img
+                            src="https://images.ctfassets.net/wtodlh47qxpt/6BdZsyjLn64c06uCIE73d1/fb530f5d5231533b049463f6c7e8a2b1/google_play.svg"
+                            alt=""></a>
+                    <a href="https://apps.apple.com/in/app/kfc-india/id915824379"><img
+                            src="https://images.ctfassets.net/wtodlh47qxpt/em3mcMuAdXWlgucSJiTbS/d3ae7e51ed101d829e459355e255c47f/apple.svg"
+                            alt=""></a>
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                <p>Copyright © KFC Corporation 2022 All Rights Reserved</p>
+                <div class="copyrightLogo">
+                    <img src="https://images.ctfassets.net/wtodlh47qxpt/4ZHyPA2EeaoP3aqtNDriBA/463462a9c27b0aa585e12b21ce3766e0/Social_Insta_White.svg"
+                        alt="">
+                    <img src="https://images.ctfassets.net/wtodlh47qxpt/dKiu2meLcfz2DNwsg7nZw/7194830b1ba6f25b158a23d6b2c4752c/Social_Facebook_White.svg"
+                        alt="">
+                    <img src="https://images.ctfassets.net/wtodlh47qxpt/78z9x0WwdkdXwGVK726EKX/6599ca34ec88e2a6f46d7d94ed85a8ad/Social_Twitter_White.svg"
+                        alt="">
+                </div>
+            </div>
+    </footer>
+</body>
+
+</html>
+<script>
+    document.querySelector(".findkfc").addEventListener("click", function () {
+        document.querySelector(".popup1").classList.add("active");
+    });
+    document.querySelector(".close_button").addEventListener("click", function () {
+        document.querySelector(".popup1").classList.remove("active");
+    });
+    document.querySelector("#contactus").addEventListener("click", function () {
+        window.location.href = "contactus.html";
+    });
+    document.querySelector("#cancel").addEventListener("click", function () {
+        window.location.href = "findkfc.html";
+    });
+    document.querySelector("#submit").addEventListener("click", function () {
+        window.location.href = "findkfc.html";
+    });
+    document.querySelector("#delivery").addEventListener("click", function () {
+        window.location.href = "findkfc.html";
+    });
+    let valueofPrice=0;
+let allPrice=JSON.parse(localStorage.getItem("CartData")) || [];
+function totalPrice(){
+    
+    console.log('hello')
+    allPrice.forEach(e=>{
+        console.log(e.Price)
+        valueofPrice+=Number(e.Price);
+    })
+    document.getElementById('pricess').innerText=allPrice.length;
+}
+totalPrice()
+</script>
+<script src="js/index.js"></script>

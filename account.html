@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="icon" href="https://online.kfc.co.in/favicon.ico"/>
+    <title> Account</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav">
+                <div class="right-nav">
+                    <a href="/"><img src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg" alt="logo"></a>
+                    <ul>
+                        <li>Menu</li>
+                        <li>Deals</li>
+                    </ul>
+                </div>
+                <div class="left-nav">
+                    <div class="user-logo">
+                        <a href="/"><img
+                                src="https://images.ctfassets.net/wtodlh47qxpt/6bJdGLRkksNvWP4LI9ZiFF/cb89d6393492fd093e0f99980abfa39e/Account_Icon.svg"
+                                alt=""></a>
+                        <span id="signIn_index">Account</a> </span>
+                    </div>
+                    <div id="Border_left"></div>
+                    <div class="cart-bucket">
+                        <span></span>
+                        <span id="pricess">0</span>
+                        <div class="img"><a href="/addCart.html"><img
+                                    src="https://images.ctfassets.net/wtodlh47qxpt/6qtBVFuno7pdwOQ9RIvYm9/d13e9b7242980972cf49beddde2cc295/bucket_cart_icon.svg"
+                                    alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- start Order part -->
+    <div class="startOrder">
+        <div class="childOrder">
+            <h3>LET'S ORDER FOR DELIVERY, PICK UP, OR DINE-IN</h3>
+            <button>Start Over</button>
+        </div>
+    </div>
+
+
+
+    <div id="user_section">
+        <div id="user_section_left">
+            <img src="https://online.kfc.co.in/static/media/Strips.4f336307.svg" alt="">
+            <h4>HELLO KFC LOVER!</h4>
+            <div id="user_menu_container">
+                <div onclick="orderHistory()" id="order_History" class="user_account_menu">Order History</div>
+                <div onclick="favoriteMenu()" id="favorite_Menu" class="user_account_menu">My Favorite Menu</div>
+                <div onclick="addresses()" id="addresses" class="user_account_menu">Addresses</div>
+                <div onclick="accountSettings(event)" id="account_Settings" class="user_account_menu">Account Settings
+                </div>
+            </div>
+            <button id="user_signout">Sign Out</button>
+        </div>
+
+        <div id="user_section_right">
+            <div id="user_section_header">
+                <div id="user_section_order">Order History</div>
+
+                <div id="user_section_orderlookup">
+                    <span>Looking for a specific order?</span>
+                    <button id="userOrder">Order Lookup</button>
+                </div>
+            </div>
+
+            <div id="user_section_NoOrder">
+                <span id="Noorders">No orders have been placed in the past 12 months.</span>
+                <button><a href="Menu.html" style="color:white;">View menu</a></button>
+            </div>
+
+            <hr>
+            <div id="user_section_help_container">
+                <div id="user_section_help">
+                    <div id="user_section_helpText">
+                        <span>HAVE A QUESTION?</span>
+                        <span>Connect with a specialist for answers.</span>
+                    </div>
+                    <button id="user_section_helpBtn"><a href="help.html" style="color:black;">Get Help</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup1">
+        <h1>ORDER LOOKUP</h1>
+        <div class="close_button">&times;</div>
+        <hr>
+        <div class="form">
+            <h2>ENTER YOUR ORDER NUMBER</h2>
+            <p>Note: *Indicates required field</p>
+            <input type="number" name="" id="" placeholder="Phone Number*">
+            <input type="text" name="" id="" placeholder="Order Number*">
+            <input type="text" placeholder="Email Address*">
+
+        </div>
+        <div id="button">
+            <button id="cancel">Cancel</button>
+            <button id="submit">Submit</button>
+        </div>
+
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="nextFooter">
+                <div class="footerLogo">
+                    <img src="https://images.ctfassets.net/wtodlh47qxpt/25FSYFuEtGct8NSrtpKe6d/b602f6fe0bf294e6a6dff5d7648bf594/KFC_Logo.svg"
+                        alt="">
+                </div>
+                <div class="kfcFoodMenu">
+                    <ul>
+                        <li><a href="/">KFC FOOD</a></li>
+                        <li><a href="/Menu.html">Menu</a></li>
+                        <li><a href="/">Order Lookup</a></li>
+                        <li><a href="/gift.html">Gift Card</a></li>
+                    </ul>
+                </div>
+
+                <div class="footerSupport">
+                    <ul>
+                        <li><a href="/">support</a></li>
+                        <li><a href="/help.html">Get Help</a></li>
+                        <li><a href="/contactus.html">contact Us</a></li>
+                        <li><a href="/feedback.html">KFC Feedback</a></li>
+                        <li><a href="/Privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footerLegal">
+                    <ul>
+                        <li><a href="/">Legal</a></li>
+                        <li><a href="/terms.html">Terms and condtions </a></li>
+                        <li><a href="/Privacy.html">Privacy Policy</a></li>
+                        <li><a href="/disclaimer.html">Disclaimer</a></li>
+                        <li><a href="/caution.html">Caution Notice</a></li>
+                    </ul>
+                </div>
+
+                <div class="footerIndia">
+                    <ul>
+                        <li><a href="/">KFC India</a></li>
+                        <li><a href="/about.html">About KFC </a></li>
+                        <li><a href="/care.html">KFC Care</a></li>
+                        <li><a href="/careers.html">Careers</a></li>
+                        <li><a href="/golden.html">Our Golden Past</a></li>
+                    </ul>
+                </div>
+
+                <div class="footerfind">
+                    <ul>
+                        <li><a href="/findkfc.html"><img
+                                    src="https://images.ctfassets.net/wtodlh47qxpt/6qgKpWUOIsrIiazhk3cdmF/d60b4c20be69bab1f939bf33348b67e9/Find_KFC.svg"
+                                    alt="">Find KFC</a></li>
+                    </ul>
+                </div>
+                <div class="footerApps">
+                    <a href="https://play.google.com/store/apps/details?id=com.yum.kfc"><img
+                            src="https://images.ctfassets.net/wtodlh47qxpt/6BdZsyjLn64c06uCIE73d1/fb530f5d5231533b049463f6c7e8a2b1/google_play.svg"
+                            alt=""></a>
+                    <a href="https://apps.apple.com/in/app/kfc-india/id915824379"><img
+                            src="https://images.ctfassets.net/wtodlh47qxpt/em3mcMuAdXWlgucSJiTbS/d3ae7e51ed101d829e459355e255c47f/apple.svg"
+                            alt=""></a>
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                <p>Copyright © KFC Corporation 2022 All Rights Reserved</p>
+                <div class="copyrightLogo">
+                    <img src="https://images.ctfassets.net/wtodlh47qxpt/4ZHyPA2EeaoP3aqtNDriBA/463462a9c27b0aa585e12b21ce3766e0/Social_Insta_White.svg"
+                        alt="">
+                    <img src="https://images.ctfassets.net/wtodlh47qxpt/dKiu2meLcfz2DNwsg7nZw/7194830b1ba6f25b158a23d6b2c4752c/Social_Facebook_White.svg"
+                        alt="">
+                    <img src="https://images.ctfassets.net/wtodlh47qxpt/78z9x0WwdkdXwGVK726EKX/6599ca34ec88e2a6f46d7d94ed85a8ad/Social_Twitter_White.svg"
+                        alt="">
+                </div>
+            </div>
+    </footer>
+</body>
+
+</html>
+<script>
+    let valueofPrice=0;
+let allPrice=JSON.parse(localStorage.getItem("CartData")) || [];
+function totalPrice(){
+    
+    console.log('hello')
+    allPrice.forEach(e=>{
+        console.log(e.Price)
+        valueofPrice+=Number(e.Price);
+    })
+    document.getElementById('pricess').innerText=allPrice.length;
+}
+totalPrice()
+</script>
+<script src="js/account.js"></script>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://online.kfc.co.in/favicon.ico"/>
+    <title>Payment Gateway</title>
+    <style>
+        * {
+            font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        }
+
+        body {
+            width: 80%;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+        }
+
+        #container {
+            width: 30%;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 5px;
+
+        }
+
+        h1 {
+            padding-top: 20px;
+            font-size: x-large;
+        }
+
+        h1,
+        form {
+            margin-left: 15px;
+
+        }
+
+        input {
+            width: auto;
+            border-radius: 5px;
+            border: 2px solid #e1e4e7;
+            margin: auto;
+            margin-top: 10px;
+            padding: 10px 10px;
+
+        }
+
+        #otp {
+            width: 87%;
+        }
+
+        #submit {
+            width: 94%;
+            background-color: #0070ba;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        @media only screen and (min-width: 500px) and (max-width: 800px) {
+            #container {
+                width: 60%;
+                margin: auto;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                border-radius: 5px;
+
+            }
+        }
+
+        @media only screen and (min-width: 320px) and (max-width: 499px) {
+            #container {
+                width: 90%;
+                margin: auto;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                border-radius: 5px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Please Enter OTP </h1>
+        <form>
+            <input type="text" placeholder="Enter OTP" id="otp">
+            <input type="submit" id="submit" value="Pay Now">
+        </form>
+    </div>
+
+</body>
+
+</html>
+<script>
+    let monthData = JSON.parse(localStorage.getItem("CartData"));
+    document.querySelector("form").addEventListener("submit", storevalue)
+
+    function storevalue() {
+        event.preventDefault();
+        let OTP = document.querySelector("#otp").value;
+        if (OTP != "") {
+            if (OTP === "1234") {
+                let NoofOrders = monthData.length;
+                localStorage.setItem("orders", JSON.stringify(NoofOrders));
+                alert("Payment Succesfull")
+                window.location.href = "index.html";
+            }
+            else {
+                alert("You Have Entered Wrong OTP")
+            }
+
+        }
+        else {
+            alert("Please Enter OTP")
+        }
+
+    }
+</script>

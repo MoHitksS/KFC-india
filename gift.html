@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="icon" href="https://online.kfc.co.in/favicon.ico"/>
+    <title>GIFT CARD</title>
+    <style>
+        body * {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        #heading {
+            display: grid;
+            justify-content: center;
+            background-color: #f8f7f5;
+            padding: 5%;
+        }
+
+        #heading>h1 {
+            font-size: 60px;
+            margin-top: -4%;
+        }
+
+        #heading>button {
+            border-radius: 200px;
+            padding: 11px 20px;
+            font-weight: 800;
+            width: 50%;
+            justify-self: center;
+            cursor: pointer;
+        }
+
+        #heading>button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        #box {
+            width: 60%;
+            margin: auto;
+        }
+
+        #box>div {
+            display: grid;
+            justify-content: center;
+        }
+
+        #box>h3 {
+            margin-bottom: 10px;
+        }
+
+        h3+hr {
+            border: 1px solid;
+            background-color: black;
+            margin-top: -1%;
+        }
+
+        hr+img {
+            margin-left: 15%;
+            margin-top: 5%;
+        }
+
+        #box>.giftamount {
+            display: flex;
+            background-color: #f8f7f5;
+            padding: 4%;
+            justify-content: flex-start;
+            margin-top: 10px;
+        }
+
+        .giftamount>h3 {
+            margin-left: 2%;
+            margin-right: 10%;
+        }
+
+        .giftamount>button {
+            margin-right: 3%;
+            border-radius: 30px;
+            padding: 10px 40px;
+            font-weight: bold;
+        }
+
+        #information {
+            /* width: 100%; */
+            background-color: #f8f7f5;
+            margin-top: 10px;
+            padding: 5%;
+        }
+
+        #box>#information>div {
+            /* width: 100%; */
+            display: grid;
+            grid-template: auto/repeat(2, 300px);
+            margin-left: -15%;
+        }
+
+        #box>#information>div>p {
+            /* margin-left: 25%; */
+            text-align: end;
+        }
+
+        #information>form {
+            display: grid;
+            gap: 10px;
+            margin-left: 20%;
+
+        }
+
+        #information>form>input {
+            border: none;
+            border-bottom: 1px solid;
+            background-color: #f8f7f5;
+            padding: 10px;
+        }
+
+        #box>.message {
+            display: grid;
+            grid-template: auto/repeat(2, auto);
+            background-color: #f8f7f5;
+            margin-top: 10px;
+            padding: 4%;
+            justify-content: space-evenly;
+        }
+
+        #box>.message>h3 {
+            margin-left: -190%;
+        }
+
+        #box>.message>input {
+            margin-left: -145%;
+            width: 290%;
+            padding: 10%;
+        }
+
+        #box>#button {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #box>#button>button {
+            border: 1.5px solid;
+            border-radius: 100px;
+            padding: 10px 20px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 1%;
+            background-color: white;
+        }
+
+        #box>#button>button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        #box>#button>button:first-child {
+            padding: 10px 65px;
+        }
+
+        #box>#bottom>* {
+            text-align: justify;
+        }
+
+        #box>#bottom>:first-child {
+            text-align: start;
+            font-weight: bold;
+            margin-bottom: -1%;
+            margin-top: 5%;
+        }
+
+        .popup1 {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: -150%;
+            left: 50%;
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(1.25);
+            width: 40%;
+            height: auto;
+            padding: 20px 30px;
+            background: #fff;
+            box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+            transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+
+        }
+
+        .popup1.active {
+            top: 50%;
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+            transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+
+        }
+
+        .close_button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 20px;
+            height: 20px;
+            background: grey;
+            color: white;
+            text-align: center;
+            line-height: 15px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        p {
+            text-align: end;
+        }
+
+        .form {
+            width: auto;
+            display: grid;
+            gap: 10px;
+            padding: 5%;
+            background: #f8f7f5;
+        }
+
+        .form>input {
+            border: none;
+            padding: 2%;
+            background: #f8f7f5;
+            border-bottom: 1px solid;
+        }
+
+        #button {
+            display: flex;
+            justify-content: center;
+            column-gap: 60px;
+            margin-top: 10%;
+        }
+
+        #button>button {
+            border-radius: 200px;
+            background-color: white;
+            padding: 11px 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #button>button:hover {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <link rel="stylesheet" href="/css/home.css"> -->
+    <header>
+        <nav>
+            <div class="nav">
+                <div class="right-nav">
+                    <a href="/"><img src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg" alt="logo"></a>
+                    <ul>
+                        <li><a href="/Menu.html">Menu</a></li>
+                        <li><a href="/offers.html">Deals</a></li>
+                    </ul>
+                </div>
+                <div class="left-nav">
+                    <div class="user-logo">
+                        <a href="/"><img
+                                src="https://images.ctfassets.net/wtodlh47qxpt/6bJdGLRkksNvWP4LI9ZiFF/cb89d6393492fd093e0f99980abfa39e/Account_Icon.svg"
+                                alt=""></a>
+                        <span id="signIn_index"><a href="signin.html">Sign In</a> </span>
+                    </div>
+                    <div id="Border_left"></div>
+                    <div class="cart-bucket">
+                        <span></span>
+                        <span id="pricess">0</span>
+                        <div class="img"><a href="/addCart.html"><img
+                                    src="https://images.ctfassets.net/wtodlh47qxpt/6qtBVFuno7pdwOQ9RIvYm9/d13e9b7242980972cf49beddde2cc295/bucket_cart_icon.svg"
+                                    alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="heading">
+        <h1>KFC GIFT CARD</h1>
+        <button class="checkbalance">Check Balance</button>
+    </div>
+    <div id="box">
+        <h3>BUY A KFC GIFT CARD</h3>
+        <hr>
+        <img src="https://images.ctfassets.net/wtodlh47qxpt/U5m8vUqwjV342206BUH0z/09eccd01ddac7b1941faa60c7ea24381/Gift_Card_Web.svg"
+            alt="Gift Card">
+
+        <div class="giftamount">
+            <h3>GIFT AMOUNT</h3>
+            <button>₹250</button>
+            <button>₹500</button>
+            <button>₹1000</button>
+        </div>
+        <div id="information">
+            <div>
+                <h3>INFORMATION</h3>
+                <p>Note: * Indicates required field</p>
+            </div>
+            <form action="">
+                <input type="text" placeholder="Recipient Email*" required>
+                <input type="text" placeholder="Your Name*" required>
+                <input type="text" placeholder="Your Email*" required>
+                <input type="number" placeholder="Your Phone Number" required>
+            </form>
+        </div>
+        <div class="message">
+            <h3>MESSAGE</h3>
+            <input type="text" placeholder="Leave a message for recipients here.">
+        </div>
+        <div id="button">
+            <button>Cancel</button>
+            <button>Continue to Payment</button>
+        </div>
+        <div id="bottom">
+            <p>Terms & Conditions</p>
+            <p>KFC Gift Card and Gift Voucher is issued by YUM! Restaurants India Pvt. Ltd. “YUM!” & its authorized
+                franchisee for making payments at selective and participating KFC Restaurants in India. KFC Gift Voucher
+                (purchased from KFC website) is valid for 6 months from the date of its issuance, with one-time usage
+                only. KFC Gift Card (Physical card) is valid for 6 months from the date of its issuance, with multiple
+                swipe options. Any balance amount in Gift Card and Gift Voucher, after validity period, cannot be
+                exchanged for cash. KFC gift card and gift vouchers are not transferable. This gift card is not
+                redeemable on KFC website, KFC Airport outlets and select outlets. No cash refunds will be given against
+                the card incl. in case of loss or otherwise. Rights to amend terms & conditions reserved with Yum!
+                without any prior notice. For all amendments, card balance & expiry details, please visit
+                online.kfc.co.in. By accepting & using this card, the user unconditionally accepts all T&C and shall not
+                raise any disputes against YUM! & it’s authorized franchisees in this regard. Card and Voucher usage
+                subject to Force Majeure conditions. All disputes subject to exclusive jurisdiction of courts at New
+                Delhi.</p>
+        </div>
+    </div>
+    <div class="popup1">
+        <h1>CHECK YOUR GIFT CARD Balance</h1>
+        <div class="close_button">&times;</div>
+        <hr>
+        <div class="form">
+            <h2>GIFT CARD INFORMATION</h2>
+            <p>Note: *Indicates required field</p>
+            <input type="number" name="" id="" placeholder="Gift Card Number*">
+            <input type="number" name="" id="" placeholder="Pin Number*">
+            <input type="text" placeholder="Email Address">
+
+        </div>
+        <div id="button">
+            <button id="cancel">Cancel</button>
+            <button id="submit">Submit</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="nextFooter">
+                <div class="footerLogo">
+                    <img src="https://images.ctfassets.net/wtodlh47qxpt/25FSYFuEtGct8NSrtpKe6d/b602f6fe0bf294e6a6dff5d7648bf594/KFC_Logo.svg"
+                        alt="">
+                </div>
+                <div class="kfcFoodMenu">
+                    <ul>
+                        <li><a href="/">KFC FOOD</a></li>
+                        <li><a href="/Menu.html">Menu</a></li>
+                        <li><a href="/">Order Lookup</a></li>
+                        <li><a href="/gift.html">Gift Card</a></li>
+                    </ul>
+                </div>
+                <div class="footerSupport">
+                    <ul>
+                        <li><a href="/">support</a></li>
+                        <li><a href="/help.html">Get Help</a></li>
+                        <li><a href="/contactus.html">contact Us</a></li>
+                        <li><a href="/feedback.html">KFC Feedback</a></li>
+                        <li><a href="/Privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footerLegal">
+                    <ul>
+                        <li><a href="/">Legal</a></li>
+                        <li><a href="/terms.html">Terms and condtions </a></li>
+                        <li><a href="/Privacy.html">Privacy Policy</a></li>
+                        <li><a href="/disclaimer.html">Disclaimer</a></li>
+                        <li><a href="/caution.html">Caution Notice</a></li>
+                    </ul>
+                </div>
+
+                <div class="footerIndia">
+                    <ul>
+                        <li><a href="/">KFC India</a></li>
+                        <li><a href="/about.html">About KFC </a></li>
+                        <li><a href="/care.html">KFC Care</a></li>
+                        <li><a href="/careers.html">Careers</a></li>
+                        <li><a href="/golden.html">Our Golden Past</a></li>
+                    </ul>
+                </div>
+
+                <div class="footerfind">
+                    <ul>
+                        <li><a href="/findkfc.html"><img
+                                    src="https://images.ctfassets.net/wtodlh47qxpt/6qgKpWUOIsrIiazhk3cdmF/d60b4c20be69bab1f939bf33348b67e9/Find_KFC.svg"
+                                    alt="">Find KFC</a></li>
+                    </ul>
+                </div>
+                <div class="footerApps">
+                    <a href="https://play.google.com/store/apps/details?id=com.yum.kfc"><img
+                            src="https://images.ctfassets.net/wtodlh47qxpt/6BdZsyjLn64c06uCIE73d1/fb530f5d5231533b049463f6c7e8a2b1/google_play.svg"
+                            alt=""></a>
+                    <a href="https://apps.apple.com/in/app/kfc-india/id915824379"><img
+                            src="https://images.ctfassets.net/wtodlh47qxpt/em3mcMuAdXWlgucSJiTbS/d3ae7e51ed101d829e459355e255c47f/apple.svg"
+                            alt=""></a>
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                <p>Copyright © KFC Corporation 2022 All Rights Reserved</p>
+                <div class="copyrightLogo">
+                    <img src="https://images.ctfassets.net/wtodlh47qxpt/4ZHyPA2EeaoP3aqtNDriBA/463462a9c27b0aa585e12b21ce3766e0/Social_Insta_White.svg"
+                        alt="">
+                    <img src="https://images.ctfassets.net/wtodlh47qxpt/dKiu2meLcfz2DNwsg7nZw/7194830b1ba6f25b158a23d6b2c4752c/Social_Facebook_White.svg"
+                        alt="">
+                    <img src="https://images.ctfassets.net/wtodlh47qxpt/78z9x0WwdkdXwGVK726EKX/6599ca34ec88e2a6f46d7d94ed85a8ad/Social_Twitter_White.svg"
+                        alt="">
+                </div>
+            </div>
+    </footer>
+
+</body>
+
+</html>
+<script>
+    document.querySelector(".checkbalance").addEventListener("click", function () {
+        document.querySelector(".popup1").classList.add("active");
+    });
+    document.querySelector(".close_button").addEventListener("click", function () {
+        document.querySelector(".popup1").classList.remove("active");
+    });
+    let valueofPrice=0;
+let allPrice=JSON.parse(localStorage.getItem("CartData")) || [];
+function totalPrice(){
+    
+    console.log('hello')
+    allPrice.forEach(e=>{
+        console.log(e.Price)
+        valueofPrice+=Number(e.Price);
+    })
+    document.getElementById('pricess').innerText=allPrice.length;
+}
+totalPrice()
+</script>
+<script src="js/index.js"></script>

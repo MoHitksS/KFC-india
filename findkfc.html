@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://online.kfc.co.in/favicon.ico"/>
+    <title>FIND KFC</title>
+    <style>
+        #findbox{
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template: auto/repeat(2,auto);
+            gap: 60px;
+        }
+        #findbox1>button{
+            padding: 10px 20px;
+            border-radius: 100px;
+            background-color: white;
+            font-weight: bold;
+            border: 1px solid grey;
+            margin-top: 5%;
+            cursor: pointer;
+        }
+        #findbox1>input+button{
+            margin-left: 70%;
+            color: white;
+            background-color: brown;
+        }
+        #findbox1>input{
+            padding: 10px 20px;
+            border-radius: 100px;
+            border: 1px solid grey;
+            margin-top: 5%;
+            width: 100%;
+        }
+        #findbox2{
+            display: grid;
+            grid-template: repeat(2,auto);
+        }
+        #findbox2>:last-child{
+            width: 40%;
+            height: 25%;
+            margin-left: -12%;
+        }
+        iframe{
+            width: 80%;
+           margin-left: 10%;
+           margin-top: -8%;
+        }
+    </style>
+</head>
+<body>
+   <div>
+    <div id="findbox">
+        <div id="findbox1">
+            <h1>KFC</h1>
+            <hr>
+            <p>Locate the nearest restaurent(s)</p>
+            <button>SEARCH NEARBY</button>
+            <input type="text" placeholder="Search nearby restaurents by locality">
+            <button>Search</button>
+        </div>
+        <div id="findbox2">
+            <img src="https://cdn4.singleinterface.com/files/outlet/outlet_facebook_images/outlet_cover_photo/34404/KFC_Biryani_FB_Cover_png.png" alt="">
+            <img src="https://online.kfc.co.in/static/media/Strips.4f336307.svg" alt="">
+        </div>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56031.897600968354!2d77.2061763219354!3d28.629953910838008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1655484764315!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </div>
+</body>
+</html>

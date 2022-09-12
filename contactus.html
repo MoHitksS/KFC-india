@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="icon" href="https://online.kfc.co.in/favicon.ico"/>
+    <title>CONTACT US</title>
+    <style>
+        body * {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        #contactbox {
+            width: 100%;
+            display: grid;
+            grid-template: auto/repeat(2, auto);
+            justify-content: space-around;
+        }
+
+        #leftbox {
+            margin-left: -20%;
+            width: 150%;
+        }
+
+        #leftbox>p+hr {
+            border: 1px solid rgb(248, 244, 244);
+            background-color: rgb(248, 244, 244);
+            margin-bottom: 20%;
+            margin-top: 20%;
+        }
+
+        #leftbox>hr+div {
+            display: grid;
+            gap: 20px;
+        }
+
+        #leftbox>div>button {
+            width: 100%;
+            border: 1px solid grey;
+            background-color: white;
+            padding: 10px 20px;
+            border-radius: 100px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #leftbox>div>button>a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #leftbox>div>button:hover {
+            background-color: rgb(172, 168, 168);
+            color: white;
+        }
+
+        #leftbox>div>button>img {
+            width: 6%;
+            margin-right: 2%;
+        }
+
+        #checkbox {
+            background-color: #f8f7f5;
+            padding: 10%;
+        }
+
+        #checkbox1 {
+            display: grid;
+            grid-template: repeat(5, auto)/repeat(2, auto);
+            justify-content: start;
+            gap: 20px;
+        }
+
+        #rightbox {
+            margin-top: 10%;
+            width: 160%;
+            margin-left: -50%;
+        }
+
+        #rightbox>hr {
+            border: 1px solid black;
+            background-color: black;
+        }
+
+        hr+h2 {
+            margin-top: 10px;
+        }
+
+        #rightbox1+h3 {
+            margin-top: 20px;
+        }
+
+        h3+p {
+            margin-bottom: 20px;
+        }
+
+        #rightbox2 {
+            background-color: #f8f7f5;
+            margin-bottom: 2%;
+            padding: 10%;
+        }
+
+        #rightbox2>input {
+            width: 90%;
+            padding: 5%;
+            background-color: #f8f7f5;
+            border: 1px solid grey;
+        }
+
+        #rightbox3 {
+            background-color: #f8f7f5;
+            padding: 10%;
+            margin-top: 2%;
+        }
+
+        #contact {
+            display: grid;
+            grid-template: auto/repeat(2, auto);
+
+        }
+
+        #contact>p {
+            margin-left: 20%;
+            margin-top: 8%;
+            justify-content: flex-end;
+        }
+
+        #contactinfo {
+            display: grid;
+            grid-template: repeat(3, auto);
+            gap: 20px;
+        }
+
+        #contactinfo>input {
+            padding: 2%;
+            border: 0ch;
+            background-color: #f8f7f5;
+            border-bottom: 1px solid;
+        }
+
+        #rightbox4 {
+            width: 50%;
+            margin: auto;
+            border: 1px solid grey;
+            display: grid;
+            background-color: f9f9f9;
+            margin-top: 2%;
+            grid-template: auto/repeat(2, auto);
+            justify-content: space-around;
+            align-items: center;
+            padding: 0.5%;
+        }
+
+        #rightbox4>div>div {
+            margin-top: -20%;
+            display: flex;
+        }
+
+        #rightbox5 {
+            display: grid;
+            grid-template: auto/repeat(2, auto);
+            justify-content: center;
+            margin-top: 10%;
+            gap: 15%;
+        }
+
+        #rightbox5>button {
+            width: 150%;
+            padding: 10px 20px;
+            border-radius: 100px;
+            border: 1px solid grey;
+            background-color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #rightbox5>button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        #rightbox1 {
+            background-color: #f8f7f5;
+            padding: 5%;
+        }
+
+        #rightbox1>select {
+            width: 100%;
+            border: 0ch;
+            border-bottom: 1px solid grey;
+            background-color: #f8f7f5;
+            padding: 2%;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #rightbox1>select>option {
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <link rel="stylesheet" href="/css/home.css"> -->
+    <header>
+        <nav>
+            <div class="nav">
+                <div class="right-nav">
+                    <a href="/"><img src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg" alt="logo"></a>
+                    <ul>
+                        <li><a href="/Menu.html">Menu</a></li>
+                        <li><a href="/offers.html">Deals</a></li>
+                    </ul>
+                </div>
+                <div class="left-nav">
+                    <div class="user-logo">
+                        <a href="/"><img
+                                src="https://images.ctfassets.net/wtodlh47qxpt/6bJdGLRkksNvWP4LI9ZiFF/cb89d6393492fd093e0f99980abfa39e/Account_Icon.svg"
+                                alt=""></a>
+                        <span id="signIn_index"><a href="signin.html">Sign In</a> </span>
+                    </div>
+                    <div id="Border_left"></div>
+                    <div class="cart-bucket">
+                        <span></span>
+                        <span id="pricess">0</span>
+                        <div class="img"><a href="/addCart.html"><img
+                                    src="https://images.ctfassets.net/wtodlh47qxpt/6qtBVFuno7pdwOQ9RIvYm9/d13e9b7242980972cf49beddde2cc295/bucket_cart_icon.svg"
+                                    alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="contactbox">
+
+        <div id="leftbox">
+            <img src="https://online.kfc.co.in/static/media/Strips.4f336307.svg" alt="Error">
+            <h1>CONTACT US</h1>
+            <p>We'd love to hear from you.</p>
+            <hr>
+            <div>
+                <button>
+                    <img src="https://images.ctfassets.net/wtodlh47qxpt/4WC7679tMXFtQzoTY5U9t5/4ba8650ab745efb3f62cf62aec26d661/Call.svg"
+                        alt="Call us">
+                    Call Us 080-4275-4444
+                </button>
+                <button><a href="faq.html">FAQ</a></button>
+            </div>
+        </div>
+        <div id="rightbox">
+            <hr>
+            <h2>HOW CAN WE HELP?</h2>
+            <div id="rightbox1">
+                <h4>SELECT A TOPIC</h4>
+                <select>
+                    <option value="I have a question">I have a question</option>
+                    <option value="Recent visit or Delivery experience">Recent visit or Delivery experience</option>
+                </select>
+            </div>
+            <h3>QUESTION FOR US?</h3>
+            <p>We'd love to hear from you.</p>
+            <div id="rightbox2">
+                <h3>WHAT WOULD YOU LIKE TO KNOW?</h3>
+                <input type="text" placeholder="Type your message here.">
+            </div>
+            <div id="checkbox">
+                <h2>LET US KNOW YOU BETTER</h2>
+                <div id="checkbox1">
+                    <input type="checkbox">
+                    <label for="">I am a job seeker</label>
+                    <input type="checkbox">
+                    <label for="">I am a media person</label>
+                    <input type="checkbox">
+                    <label for="">I want to be a business partner</label>
+                    <input type="checkbox">
+                    <label for="">I am interested in being a supplier</label>
+                    <input type="checkbox">
+                    <label for="">Any Other</label>
+                </div>
+            </div>
+            <div id="rightbox3">
+                <div id="contact">
+                    <h2>CONTACT INFO</h2>
+                    <p>Note: *Indicate required fields</p>
+                </div>
+                <div id="contactinfo">
+                    <input type="text" placeholder="First Name*" required>
+                    <input type="text" placeholder="Last Name*" required>
+                    <input type="number" placeholder="Phone Number*" required>
+                    <input type="text" placeholder="Email*" required>
+                </div>
+
+            </div>
+            <div id="rightbox4">
+                <div>
+                    <input type="checkbox">
+                    <label for=""> I'm not a robot</label>
+                </div>
+                <div>
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAYGBgYHBgcICAcKCwoLCg8ODAwODxYQERAREBYiFRkVFRkVIh4kHhweJB42KiYmKjY+NDI0PkxERExfWl98fKcBBgYGBgcGBwgIBwoLCgsKDw4MDA4PFhAREBEQFiIVGRUVGRUiHiQeHB4kHjYqJiYqNj40MjQ+TERETF9aX3x8p//CABEIADkAOQMBIgACEQEDEQH/xAAcAAABBAMBAAAAAAAAAAAAAAAAAQIGBwMFCAT/2gAIAQEAAAAA6mGDwDFzRCvVf9kCQatLY5bsDpEIjBLb1khBNVEYzurNeJiZjb6FzeXVZ8zBdogAB//EABkBAQADAQEAAAAAAAAAAAAAAAADBAUBBv/aAAoCAhADEAAAAOvU42Vo5VieK/Wmkw7QAAf/xAA4EAACAgECAwQGBgsAAAAAAAABAgMEEQAFBhIhEyIxYQcgMkFCURAUFWKBwTA0Q1NjcnOCkrLR/9oACAEBAAE/ANEgAkkAa7SP94n+Q0JIyQA6EnwGR608kMUEskzBYlRi5bwCgdc63OShNfsSUaxhrs5McZ9w/LPy1xQUWtVJwMSt1/DXDHpC4h4emjC2XtU/jqTOWXH3CeqHXCfHsfFHEW5VqcDJRrUY3QyDEjyO+CT6npCtvDsSQpnNiwqN/KoLa4U2WLd94SGzkV4kMso8OfBwE/E62zhyjtW47lbhaMUrFcBom6rGVYsf7NcZfZNriC3LsO1WoaR/gOFd/e6JjuKdehCCePe97MkEqA0IvbRl/aepxj+o1P65/wBdVhWNiEWefsecdpye1jy1Xt7YK6dhYrrCqgKA4UKPy1DxJQl3A1g2IyAEmPRWf5eQ+R9XddsG4ipG7YjjlLyY8WGMYGt14YswSNJTUyxE55PjT/o01awG5TWmDfLs2zrbuG79t1MyNBD8TMMOR91dRxrFGka55VUKMnJwPM/SSAMk6mniiUFiSS/IFUFiW8cADS26z/VuWUHtwxi+9yjJ0t+s3NymQ4DEdxu8FPKSvTrjX2lUESSEyBWUuMxtnkHi5GOi+ehYhOMN4zdkOh9sdcaimilMoR8mOQo/kwGcfRZgMz0zhcRSs5z7u4VBHmCdVNvsVlhkCBpI2XKmQYcCMoSMKMHrp6l6SWOdnjV4xDyoo7pKtzN1PUZzjVOh2KczszSAShcsSqh2J6D3aFe3ClYxJG7rSWBgzEKGXGG8xoUZFl7YdXF5psdowUqVIHTwzqhTsVX78ocPEvP0AxICTkY8Qc/ov//EACIRAAEEAgIBBQAAAAAAAAAAAAECAwQRABIFIQYQEzAxof/aAAgBAgEBPwACzifGbbCjKIJAOpR2P3JnDyo2yulNgXuPSK8GJDTpRvooK1urrJ3MSZa1VaG1ICS3dj7vHuZLsNUb2CAUhOxXsevi/8QAIxEAAAUDAwUAAAAAAAAAAAAAAQIDERIABDEFEBMwQUJR4f/aAAgBAwEBPwAaLqzqw4Qyzgb5SVymowYH1ssmKqRyAaMgZ6trBJAoeRgM8maiWsVZy74bpf/Z"
+                        alt="Captcha Error">
+                    <div>
+                        <p id="googleprivacy">Privacy -</p>
+                        <p id="googleterms"> Terms</p>
+                    </div>
+                </div>
+            </div>
+            <div id="rightbox5">
+                <button>Cancel</button>
+                <button>Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="nextFooter">
+                <div class="footerLogo">
+                    <img src="https://images.ctfassets.net/wtodlh47qxpt/25FSYFuEtGct8NSrtpKe6d/b602f6fe0bf294e6a6dff5d7648bf594/KFC_Logo.svg"
+                        alt="">
+                </div>
+                <div class="kfcFoodMenu">
+                    <ul>
+                        <li><a href="/">KFC FOOD</a></li>
+                        <li><a href="/Menu.html">Menu</a></li>
+                        <li><a href="/">Order Lookup</a></li>
+                        <li><a href="/gift.html">Gift Card</a></li>
+                    </ul>
+                </div>
+                <div class="footerSupport">
+                    <ul>
+                        <li><a href="/">support</a></li>
+                        <li><a href="/help.html">Get Help</a></li>
+                        <li><a href="/contactus.html">contact Us</a></li>
+                        <li><a href="/feedback.html">KFC Feedback</a></li>
+                        <li><a href="/Privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footerLegal">
+                    <ul>
+                        <li><a href="/">Legal</a></li>
+                        <li><a href="/terms.html">Terms and condtions </a></li>
+                        <li><a href="/Privacy.html">Privacy Policy</a></li>
+                        <li><a href="/disclaimer.html">Disclaimer</a></li>
+                        <li><a href="/caution.html">Caution Notice</a></li>
+                    </ul>
+                </div>
+
+                <div class="footerIndia">
+                    <ul>
+                        <li><a href="/">KFC India</a></li>
+                        <li><a href="/about.html">About KFC </a></li>
+                        <li><a href="/care.html">KFC Care</a></li>
+                        <li><a href="/careers.html">Careers</a></li>
+                        <li><a href="/golden.html">Our Golden Past</a></li>
+                    </ul>
+                </div>
+
+                <div class="footerfind">
+                    <ul>
+                        <li><a href="/findkfc.html"><img
+                                    src="https://images.ctfassets.net/wtodlh47qxpt/6qgKpWUOIsrIiazhk3cdmF/d60b4c20be69bab1f939bf33348b67e9/Find_KFC.svg"
+                                    alt="">Find KFC</a></li>
+                    </ul>
+                </div>
+                <div class="footerApps">
+                    <a href="https://play.google.com/store/apps/details?id=com.yum.kfc"><img
+                            src="https://images.ctfassets.net/wtodlh47qxpt/6BdZsyjLn64c06uCIE73d1/fb530f5d5231533b049463f6c7e8a2b1/google_play.svg"
+                            alt=""></a>
+                    <a href="https://apps.apple.com/in/app/kfc-india/id915824379"><img
+                            src="https://images.ctfassets.net/wtodlh47qxpt/em3mcMuAdXWlgucSJiTbS/d3ae7e51ed101d829e459355e255c47f/apple.svg"
+                            alt=""></a>
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                <p>Copyright © KFC Corporation 2022 All Rights Reserved</p>
+                <div class="copyrightLogo">
+                    <img src="https://images.ctfassets.net/wtodlh47qxpt/4ZHyPA2EeaoP3aqtNDriBA/463462a9c27b0aa585e12b21ce3766e0/Social_Insta_White.svg"
+                        alt="">
+                    <img src="https://images.ctfassets.net/wtodlh47qxpt/dKiu2meLcfz2DNwsg7nZw/7194830b1ba6f25b158a23d6b2c4752c/Social_Facebook_White.svg"
+                        alt="">
+                    <img src="https://images.ctfassets.net/wtodlh47qxpt/78z9x0WwdkdXwGVK726EKX/6599ca34ec88e2a6f46d7d94ed85a8ad/Social_Twitter_White.svg"
+                        alt="">
+                </div>
+            </div>
+    </footer>
+</body>
+
+</html>
+<script>
+    let valueofPrice=0;
+let allPrice=JSON.parse(localStorage.getItem("CartData")) || [];
+function totalPrice(){
+    
+    console.log('hello')
+    allPrice.forEach(e=>{
+        console.log(e.Price)
+        valueofPrice+=Number(e.Price);
+    })
+    document.getElementById('pricess').innerText=allPrice.length;
+}
+totalPrice()
+</script>
+<script src="js/index.js"></script>

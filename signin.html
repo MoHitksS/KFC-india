@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/signin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="https://online.kfc.co.in/favicon.ico"/>
+    <title>Sign In</title>
+</head>
+    <body>
+        <div id="signin_container">
+            <div>Sign In / Sign up</div> 
+            <div id="signin_logo">
+                <img src="https://login.kfc.co.in/auth/resources/1vkce/login/kfcIndiaLoginUIDev_2021_10_27_16_49/images/KFC_logo.svg" alt="">
+            </div>
+            <div id="signin_title">LET’S SIGN IN OR CREATE ACCOUNT WITH YOUR PHONE NUMBER!</div>
+            <form id="signin_form">
+                <input type="number" placeholder="Phone Number*" id="signin_number" maxlength = "10" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+                <p></p>
+                <div id="signin_termsandconditions">
+                    <p>By “logging in to KFC”, you agree to our <u><a href="https://online.kfc.co.in/privacyPolicy" target="_blank">Privacy Policy</a></u> and <u><a href="https://online.kfc.co.in/terms-and-conditions" target="_blank">Terms & Conditions</a></u>.</p>
+                </div>
+                <button type="submit" id="signin_btnSendCode" value="Send Me a Code">Send Me a Code</button>
+            </form>
+            <div id="signin_ordiv">
+                <div id="signin_orright"></div>
+                <div id="signin_orcenter">or</div>
+                <div id="signin_orleft"></div>
+            </div>
+            <button onclick="redirectHome()" id="signin_skipbtn">Skip, Continue As Guest</button>
+        </div>
+    </body>
+</html>
+<script src="js/singin.js"></script>
