@@ -9,7 +9,7 @@ KFC_website_clone where users can log in through their mobile numbers can order 
 ### 3. JavaScript
 
 ## Live Demo
-https://jolly-hawking-c11904.netlify.app/
+https://kfc-online-india.netlify.app/
 
 ## Team Members
 
