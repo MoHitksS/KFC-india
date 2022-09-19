@@ -13,9 +13,12 @@ https://jolly-hawking-c11904.netlify.app/
 
 ## Team Members
 
-### 1. Vishal Singh
-### 2. Manish Kumar
-### 3. Vikalp Dwivedi
+### 1. Mohit Sharma
+### 2. Naveen Saini
+### 3. Pramod kumar sharma
+### 4. Ajeet Kumar
+### 5. Mallika Arhun
+### 6. Ayush
 
 
 ## Functionality
@@ -27,7 +30,7 @@ https://jolly-hawking-c11904.netlify.app/
 
 ## Pages Built and steps to run the project
 
-First step clone the repository using the git command - git clone https://github.com/Vishalrj750/Final_Kfc_Repo.git
+First step clone the repository using the git command - git clone https://github.com/MoHitksS/KFC-india
 
 Go to index.html
 
